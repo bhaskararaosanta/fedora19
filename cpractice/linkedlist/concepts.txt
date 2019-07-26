@@ -1,0 +1,6 @@
+
+compared to arrays, linked list has following advantages:
+1. As many data nodes can be added or deleted as on demand
+2. For creating linked list a self-referntial structure shall be used. self referential means a structure pointer
+of same structure type shall be defined inside the structure.
+3. 

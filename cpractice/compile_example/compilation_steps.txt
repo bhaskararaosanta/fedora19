@@ -1,0 +1,26 @@
+
+
+compilation stages
+1. Preprocessing: it can be done using -E flag with gcc and it will preprocess all
+   directives started with #.
+
+ex: $gcc -E -o helloworld helloworld.c           
+/* The above command will produce helloworld file with expanded preprocessor directives */
+
+2. Compilation: Using -S flag with gcc we can only compile the program and get the
+   human readable assembly code.
+
+ex: $gcc -S -o helloworld helloworld.c           
+/* The above command will produce helloworld file with assembly code corresponding to the architecture */
+
+
+3. Assembly: Using -c we can convert c program to assembly code or object code.
+
+
+
+memory layout of the c program or process:
+using below command we can know the memory usage of each block like
+text, data, bss, dec, hex, filename
+
+$gcc helloworld.c -o memory-layout
+$size memory-layout
