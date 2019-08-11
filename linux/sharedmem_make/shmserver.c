@@ -3,6 +3,7 @@
 #include <sys/shm.h>
 #include <stdlib.h>
 #include <sys/types.h>
+#include <unistd.h>
 
 #define	SHMSIZE	27
 
@@ -38,6 +39,8 @@ int main()
 		*s = c;
 		s++;
 	}
+
+	printf("shmserver process id:%d\n", getpid());
 
 	while(*shm != '*'); /* waiting for client process to change the 
 			       first character from 'a' to '*' */
