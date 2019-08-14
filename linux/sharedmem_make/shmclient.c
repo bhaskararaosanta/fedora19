@@ -70,7 +70,13 @@ int main()
 	printf("shared memory creator pid:%d\n", bufcopy.shm_cpid);
 	printf("shared memory last operated process pid:%d\n", bufcopy.shm_lpid);
 	printf("shared memory number of current attaches:%d\n", bufcopy.shm_nattch);
-
+	
+	printf("shared memory effective UID of owner:%d\n", bufcopy.shm_perm.uid);
+	printf("shared memory effective GID of owner:%d\n", bufcopy.shm_perm.gid);
+	printf("shared memory effective UID of creator:%d\n", bufcopy.shm_perm.cuid);
+	printf("shared memory effective GID of creator:%d\n", bufcopy.shm_perm.cgid);
+	printf("shared memory segment permissions+SHM_DEST+SHM_LOCKED flags:%o\n", bufcopy.shm_perm.mode);
+	printf("shared memory sequence number:%d\n", bufcopy.shm_perm.__seq);
 	return 0;
 }
 
