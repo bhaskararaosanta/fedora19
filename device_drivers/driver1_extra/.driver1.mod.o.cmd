@@ -1,4 +1,4 @@
-cmd_/home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driver1.mod.o := gcc -Wp,-MD,/home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/.driver1.mod.o.d  -nostdinc -isystem /usr/lib/gcc/i686-redhat-linux/8/include -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Wno-format-security -Wno-address-of-packed-member -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i686 -mtune=generic -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -Wno-int-in-bool-context -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fvar-tracking-assignments -g -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned  -DKBUILD_BASENAME='"driver1.mod"' -DKBUILD_MODNAME='"driver1"' -DMODULE  -c -o /home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driver1.mod.o /home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driver1.mod.c
+cmd_/home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driver1.mod.o := gcc -Wp,-MD,/home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/.driver1.mod.o.d  -nostdinc -isystem /usr/lib/gcc/i686-redhat-linux/8/include -I./arch/x86/include -I./arch/x86/include/generated  -I./include -I./arch/x86/include/uapi -I./arch/x86/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Wno-format-security -Wno-address-of-packed-member -std=gnu89 -mno-sse -mno-mmx -mno-sse2 -mno-3dnow -mno-avx -m32 -msoft-float -mregparm=3 -freg-struct-return -fno-pic -mpreferred-stack-boundary=2 -march=i686 -mtune=generic -Wa,-mtune=generic32 -ffreestanding -DCONFIG_AS_CFI=1 -DCONFIG_AS_CFI_SIGNAL_FRAME=1 -DCONFIG_AS_CFI_SECTIONS=1 -DCONFIG_AS_SSSE3=1 -DCONFIG_AS_AVX=1 -DCONFIG_AS_AVX2=1 -DCONFIG_AS_AVX512=1 -DCONFIG_AS_SHA1_NI=1 -DCONFIG_AS_SHA256_NI=1 -Wno-sign-compare -fno-asynchronous-unwind-tables -mindirect-branch=thunk-extern -mindirect-branch-register -fno-jump-tables -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wno-unused-const-variable -fno-omit-frame-pointer -fno-optimize-sibling-calls -fvar-tracking-assignments -g -pg -mrecord-mcount -mfentry -DCC_USING_FENTRY -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned  -DKBUILD_BASENAME='"driver1.mod"' -DKBUILD_MODNAME='"driver1"' -DMODULE  -c -o /home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driver1.mod.o /home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driver1.mod.c
 
 source_/home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driver1.mod.o := /home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driver1.mod.c
 
@@ -12,7 +12,6 @@ deps_/home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driv
   include/linux/compiler_types.h \
     $(wildcard include/config/have/arch/compiler/h.h) \
     $(wildcard include/config/enable/must/check.h) \
-    $(wildcard include/config/arch/supports/optimized/inlining.h) \
     $(wildcard include/config/optimize/inlining.h) \
   include/linux/compiler_attributes.h \
   include/linux/compiler-gcc.h \
@@ -34,7 +33,6 @@ deps_/home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driv
   include/linux/types.h \
     $(wildcard include/config/have/uid16.h) \
     $(wildcard include/config/uid16.h) \
-    $(wildcard include/config/lbdaf.h) \
     $(wildcard include/config/arch/dma/addr/t/64bit.h) \
     $(wildcard include/config/phys/addr/t/64bit.h) \
     $(wildcard include/config/64bit.h) \
@@ -360,6 +358,9 @@ deps_/home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driv
     $(wildcard include/config/preempt/notifiers.h) \
   arch/x86/include/asm/preempt.h \
   include/linux/bottom_half.h \
+  arch/x86/include/generated/asm/mmiowb.h \
+  include/asm-generic/mmiowb.h \
+    $(wildcard include/config/mmiowb.h) \
   include/linux/spinlock_types.h \
   include/linux/lockdep.h \
     $(wildcard include/config/lockdep.h) \
@@ -420,9 +421,7 @@ deps_/home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driv
   include/linux/rcutree.h \
   include/linux/rwsem.h \
     $(wildcard include/config/rwsem/spin/on/owner.h) \
-    $(wildcard include/config/rwsem/generic/spinlock.h) \
   include/linux/osq_lock.h \
-  arch/x86/include/asm/rwsem.h \
   include/linux/completion.h \
   include/linux/wait.h \
   include/uapi/linux/wait.h \
@@ -588,13 +587,15 @@ deps_/home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driv
     $(wildcard include/config/zone/dma32.h) \
     $(wildcard include/config/zone/device.h) \
     $(wildcard include/config/pm/sleep.h) \
-    $(wildcard include/config/memory/isolation.h) \
-    $(wildcard include/config/compaction.h) \
+    $(wildcard include/config/contig/alloc.h) \
     $(wildcard include/config/cma.h) \
   include/linux/mmzone.h \
     $(wildcard include/config/force/max/zoneorder.h) \
+    $(wildcard include/config/memory/isolation.h) \
+    $(wildcard include/config/shuffle/page/allocator.h) \
     $(wildcard include/config/zsmalloc.h) \
     $(wildcard include/config/memory/hotplug.h) \
+    $(wildcard include/config/compaction.h) \
     $(wildcard include/config/flat/node/mem/map.h) \
     $(wildcard include/config/page/extension.h) \
     $(wildcard include/config/deferred/struct/page/init.h) \
@@ -608,6 +609,13 @@ deps_/home/bhaskar/Downloads/practice_programs/device_drivers/driver1_extra/driv
     $(wildcard include/config/arch/has/holes/memorymodel.h) \
   include/linux/pageblock-flags.h \
     $(wildcard include/config/hugetlb/page/size/variable.h) \
+  include/linux/page-flags.h \
+    $(wildcard include/config/arch/uses/pg/uncached.h) \
+    $(wildcard include/config/memory/failure.h) \
+    $(wildcard include/config/idle/page/tracking.h) \
+    $(wildcard include/config/swap.h) \
+    $(wildcard include/config/thp/swap.h) \
+    $(wildcard include/config/ksm.h) \
   include/linux/memory_hotplug.h \
     $(wildcard include/config/arch/has/add/pages.h) \
     $(wildcard include/config/have/arch/nodedata/extension.h) \

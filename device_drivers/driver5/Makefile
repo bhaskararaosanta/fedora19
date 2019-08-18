@@ -1,4 +1,4 @@
-obj-m:= driver1.o
+obj-m:= driver5.o
 KERNELVER= $(shell uname -r)
 
 all:
