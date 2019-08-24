@@ -40,7 +40,7 @@ static int hello_init(void)
 {
 	printk(KERN_INFO "Bhaskar: char driver loaded successfully.\n");
 	major_num = register_chrdev(0, "MyDriver", &fops);
-	printk(KERN_INFO "Bhaskar:Driver register with major number = %d\n", major_num);
+	printk(KERN_INFO "Bhaskar:Driver register with major number = %d.\n", major_num);
 	return 0;
 }
 
