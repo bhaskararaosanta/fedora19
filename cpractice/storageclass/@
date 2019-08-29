@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+//int x;
+//int x = 10;
+//int x;
+
+int main()
+{
+	int x;
+	printf("value of x:%d\n", x);
+	return 0;
+}
