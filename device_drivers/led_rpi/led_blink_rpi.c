@@ -18,7 +18,7 @@ static void blink_timer_func(unsigned long data)
 
 	/* schedule next execution */
 	blink_timer.data = !data; /* Makes LED to toggle */
-	blink_timer.expires = jiffies + (1 * Hx); // 1 Sec
+	blink_timer.expires = jiffies + (1 * HZ); // 1 Sec
 	add_timer(&blink_timer);
 }
 
