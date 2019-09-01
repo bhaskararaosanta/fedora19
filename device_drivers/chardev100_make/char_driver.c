@@ -59,6 +59,7 @@ ssize_t mywrite(struct file *filep, const char *ubuf, size_t nbytes, loff_t *off
 	printk(KERN_INFO "Bhaskar: write function called.\n");
 	printk(KERN_INFO "Write :%d\n", filep->f_pos);
 	copy_from_user(driver_buf + filep->f_pos, ubuf, nbytes);
+	printk(KERN_INFO "Data read from user buffer:%s\n", driver_buf);
 	filep->f_pos += nbytes;
 	return 0;
 }
