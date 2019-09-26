@@ -4,7 +4,7 @@ int a = 10;
 void f(void)
 {
 	//int a = 100;
-	//static int a = 200;
+	static int a = 200;
 	printf("a value in function f():%d\n", a++);
 }
 

@@ -8,6 +8,7 @@
 
 int main()
 {
+	struct stat buffer;
 	char buf[50], writebuf[30] = "Hello, how are you";
 	int fd, retwrite, retread, retclose, retlseek;
 	printf("buffer length is:%d\n", strlen(writebuf));
@@ -62,6 +63,21 @@ int main()
 		exit(EXIT_FAILURE);
 	}
 	printf("return value of read:%d\n", retread);
+	
+	if(stat("bhaskar", &buffer) < 0)
+	{
+		perror("stat");
+	}
+
+	printf("printing file statistics from struct stat\n");
+	printf("device number:%d\n", buffer.st_dev);
+	printf("File mode:%o\n", buffer.st_mode);
+	printf("Link count:%d\n", buffer.st_nlink);
+	printf("User id of file's owner:%d\n", buffer.st_uid);
+	printf("Group id of file's group:%d\n", buffer.st_gid);
+	printf("Size of file in bytes:%d\n", buffer.st_size);
+	printf("Number of blocks allocated:%d\n", buffer.st_blocks);
+	printf("File serial number:%d\n", buffer.st_ino);
 
 	/* int close(int fd); */
 	if((retclose = close(fd)) < 0)

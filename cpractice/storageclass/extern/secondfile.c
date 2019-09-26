@@ -3,7 +3,7 @@
 
 int main()
 {
-	g = 4;
+//	g = 4;
 	printf("%d\n", g);
 
 	return 0;

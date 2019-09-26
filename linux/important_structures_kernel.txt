@@ -1,4 +1,30 @@
-a
+Error Nos:
+1 to 34Nos:   vim /usr/include/asm-generic/errno-base.h 
+35 to 134Nos: vim /usr/include/asm-generic/errno.h 
+
+IPC constants and permission struct:
+vim /usr/include/bits/ipc.h 
+
+Signals also called software interrupts in userspace
+vim /usr/include/bits/signum-generic.h
+vim /usr/include/bits/signum.h
+vim /usr/include/signal.h   for all signal syscalls
+for more information on ipc please refer the following dirs
+vim /usr/include/bits/
+vim /usr/include/sys/
+
+Bit types for kernel usage
+vim /usr/include/bits/types.h
+vim /usr/include/bits/typesizes.h
+
+
+system call list
+vim /usr/include/asm/unistd_32.h 
+vim /usr/include/asm/unistd_x32.h 
+
+
+
+
 
 
 

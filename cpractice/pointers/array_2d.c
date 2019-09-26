@@ -24,6 +24,10 @@ int main()
 	printf("base address of 0th 1-dimension array:%u\n", *arr);
 	printf("base address of 1st 1-dimension array:%u\n", *(arr+1));
 	printf("base address of 2nd 1-dimension array:%u\n", *(arr+2));
+	
+	printf("base address of 0th 1-dimension array:%u\n", *arr+1);
+	printf("base address of 1st 1-dimension array:%u\n", *(arr+1)+1);
+	printf("base address of 2nd 1-dimension array:%u\n", *(arr+2)+1);
 	return 0;
 }
 

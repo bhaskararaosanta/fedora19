@@ -1,11 +1,14 @@
 #include <stdio.h>
+//#include <stdio.h>
 
-int main()
+//int main()
+#define start main
+void begin()
 {
 	printf("\nab");
 	printf("\bsi");
 	printf("\rha");
 	printf("\n");
 
-	return 0;
+//	return 0;
 }
