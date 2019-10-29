@@ -3,15 +3,14 @@
 #include <linux/fs.h>
 #include <linux/uaccess.h>
 #include <linux/ioctl.h>
-
-#define MAJOR_NUM       0xFE
-#define IOCTL_SET_MGS   _IOW(MAJOR_NUM, 0, char *)
+#define	DEBUG
+#define MAJOR_NUM       239
+#define IOCTL_SET_MSG   _IOW(MAJOR_NUM, 0, char *)
 #define IOCTL_GET_MSG   _IOR(MAJOR_NUM, 1, char *)
 #define IOCTL_GET_NTH_BYTE      _IOWR(MAJOR_NUM, 2, int)
 
 #define DEVICE_NAME "char_dev"
 #define	SUCCESS	0
-#define	DEVICE_NAME	"char_dev"
 #define	BUF_LEN	80
 
 static int Device_open = 0;
@@ -77,7 +76,7 @@ static ssize_t device_write(struct file *filep, const char __user *buffer, size_
 	return i;
 }
 
-int device_ioctl(struct inode *inodep, struct file *filep, unsigned int ioctl_num, long unsigned int ioctl_param)
+long int device_ioctl(struct file *filep, unsigned int ioctl_num, long unsigned int ioctl_param)
 {
 	int i;
 	char *temp;
@@ -94,7 +93,7 @@ int device_ioctl(struct inode *inodep, struct file *filep, unsigned int ioctl_nu
 			break;
 		
 		case IOCTL_GET_MSG:
-			i = device_read(filep, (char *)ioctl_param, 99, 0)
+			i = device_read(filep, (char *)ioctl_param, 99, 0);
 			put_user('\0', (char *)ioctl_param + i);
 			break;
 
