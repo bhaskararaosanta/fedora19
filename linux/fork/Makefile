@@ -1,8 +1,8 @@
-fork:fork.o
-	gcc -o fork fork.o
+fork2:fork2.o
+	gcc -o fork2 fork2.o
 
-fork.o:fork.c
-	gcc -o fork.o -c fork.c
+fork2.o:fork2.c
+	gcc -o fork2.o -c fork2.c
 
 clean:
 	rm *.o

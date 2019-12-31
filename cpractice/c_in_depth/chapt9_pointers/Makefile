@@ -1,8 +1,8 @@
-example_11: example_11.o
-	gcc -o example_11 example_11.o
+exercise_13: exercise_13.o
+	gcc -o exercise_13 exercise_13.o
 
-example_11.o: example_11.c
-	gcc -o example_11.o -c example_11.c
+exercise_13.o: exercise_13.c
+	gcc -o exercise_13.o -c exercise_13.c
 
 clean:
 	rm *.o

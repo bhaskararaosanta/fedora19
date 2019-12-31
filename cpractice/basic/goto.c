@@ -6,6 +6,7 @@ int main()
 	here:
 	{
 		printf("PP\n");
+		//printf("i = %d\n", i);
 	}
 	while(i <= 5)
 	{

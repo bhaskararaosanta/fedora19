@@ -1,15 +1,15 @@
-all: shmserver2 shmclient2
-shmserver2: shmserver2.o
-	gcc -o shmserver2 shmserver2.o
+all: shmserver3 shmclient3
+shmserver3: shmserver3.o
+	gcc -o shmserver3 shmserver3.o
 
-shmserver2.o: shmserver2.c
-	gcc -o shmserver2.o -c shmserver2.c
+shmserver3.o: shmserver3.c
+	gcc -o shmserver3.o -c shmserver3.c
 
-shmclient2: shmclient2.o
-	gcc -o shmclient2 shmclient2.o
+shmclient3: shmclient3.o
+	gcc -o shmclient3 shmclient3.o
 
-shmclient2.o: shmclient2.c
-	gcc -o shmclient2.o -c shmclient2.c
+shmclient3.o: shmclient3.c
+	gcc -o shmclient3.o -c shmclient3.c
 
 
 #all: shmserver1 shmclient1

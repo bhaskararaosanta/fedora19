@@ -1,15 +1,15 @@
-all: msgserver1 msgclient1
-msgserver1: msgserver1.o
-	gcc -o msgserver1 msgserver1.o
+all: msgserver3 msgclient3
+msgserver3: msgserver3.o
+	gcc -o msgserver3 msgserver3.o
 
-msgserver1.o: msgserver1.c
-	gcc -o msgserver1.o -c msgserver1.c
+msgserver3.o: msgserver3.c
+	gcc -o msgserver3.o -c msgserver3.c
 
-msgclient1: msgclient1.o
-	gcc -o msgclient1 msgclient1.o
+msgclient3: msgclient3.o
+	gcc -o msgclient3 msgclient3.o
 
-msgclient1.o: msgclient1.c
-	gcc -o msgclient1.o -c msgclient1.c
+msgclient3.o: msgclient3.c
+	gcc -o msgclient3.o -c msgclient3.c
 
 
 #all: msgserver msgclient

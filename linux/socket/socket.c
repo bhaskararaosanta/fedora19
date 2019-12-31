@@ -17,7 +17,8 @@ int main()
 	}
 	printf("Return value of socket:%d\n", sockfd);
 
-	server.sin_addr.s_addr = inet_addr("172.217.166.174"); // Google IP
+	//server.sin_addr.s_addr = inet_addr("172.217.166.174"); // Google IP
+	server.sin_addr.s_addr = inet_addr("192.168.1.102"); // Raspbian OS
 	server.sin_family = AF_INET;
 	server.sin_port = htons(80);
 
