@@ -9,7 +9,7 @@ int main(void)
 {
 	printf("Hello, world\n");
 #ifndef GoOn
-#error I had enough
+#error Bhaskar you had done enough and stop execution
 #endif
 
 	return 0;

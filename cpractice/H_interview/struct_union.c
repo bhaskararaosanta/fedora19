@@ -2,7 +2,7 @@
 
 int main()
 {
-	union {
+	struct sample {
 		struct st {
 			char a;
 			char b;
@@ -12,9 +12,9 @@ int main()
 			int i;
 			int j;
 		} value;
-	} u = {{14, 1}, {15, 1}};
+	} u = {14, 1, 15, 2};
 
-	union u *it;
+	struct sample *it;
 	it = &u;
 	printf("%d\t%d\n", it->value.i, it->value.j);
 
